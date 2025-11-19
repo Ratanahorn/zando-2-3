@@ -9,30 +9,326 @@
       src="https://kit.fontawesome.com/9152de16db.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      swiper-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .autoplay-progress {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--swiper-theme-color);
+      }
+
+      .autoplay-progress svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        stroke: var(--swiper-theme-color);
+        fill: none;
+        stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+      }
+    </style>
   </head>
   <body>
     <nav class="nav-bar">
-        <nav class="navigation">
-            <div class="left">
-                <ul>
-                    <li>Women</li>
-                    <li>Men</li>
-                    <li>Boys</li>
-                    <li>Girls</li>
-                </ul>
-            </div>
-            <div class="center">
-                <img src="https://www.zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="zando">
-            </div>
-            <div class="right">
-              <ul>
-                <li></li>
-                <li></li>
-                <li>log in</li>
-                <li>Register</li>
-              </ul>
-            </div>
-        </nav>
+      <nav class="navigation">
+        <div class="left">
+          <ul>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Boys</li>
+            <li>Girls</li>
+          </ul>
+        </div>
+        <div class="center">
+          <img
+            src="https://www.zandokh.com/images/ZANDO-NEW-LOGO-2025.png"
+            alt="zando"
+          />
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <div class="bnt-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" />
+              </div>
+            </li>
+            <li><i class="fa-regular fa-bell"></i></li>
+            <li><i class="fa-regular fa-heart"></i></li>
+            <li><i class="fa-solid fa-suitcase"></i></li>
+            <li>log in</li>
+            <li>Register</li>
+          </ul>
+        </div>
+      </nav>
     </nav>
+    <div class="slide">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide>
+          <div class="images">
+            <img
+              src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Mar/KNY/Hero%20Banner%20ZANDO.png"
+              alt=""
+            />
+            <div class="slide1">
+              <button>shop men</button>
+              <button>shop women</button>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="images">
+            <img
+              src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Mar/Summer-Season/Main-Banner.jpg"
+              alt=""
+            />
+            <div class="slide1">
+              <button>shop men</button>
+              <button>shop women</button>
+            </div>
+          </div>
+        </swiper-slide>
+        <div class="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </swiper-container>
+    </div>
+    <div class="brand">
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+      <div class="brand-images">
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Brand%20ICON/Update%20sep/ZandoNoBorder.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="lifestyle">
+      <div>
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/Oct/lifestify.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/Oct/SportLife.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/Update%20Sep/Smart%20Casual.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="bottom-lifestyle">
+      <div>
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/Oct/Tops.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://zandokh.com/image/catalog/banner/2025/ZANDO/Category%20lifestyle,%20sportlife,%20smartcasual/Oct/Bottoms.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="business-look">
+      <div class="phrase">
+        <h1>Business Look, TEN11 Attitude ✨</h1>
+        <a href="">Shop more</a>
+      </div>
+      <!-- card -->
+      <div class="card">
+        
+        <div class="image-card">
+          
+          <div class="imaage">
+            <div class="discount">-30%</div>
+            <div class="ten11">Ten11/New in</div>
+            <img
+              src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061287/ZANDO300720250037-cr-450x672.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title">
+            <span class="titles">
+              <span class="title-left">
+                <p class="heng">US $13.96</p>
+                <p id="heng">US $19.95.</p>
+              </span>
+              <span class="title-right"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </span>
+            <p>Regular Fitted Trouser</p>
+          </div>
+        </div>
+
+        <div class="image-card">
+          
+          <div class="imaage">
+            <div class="discount">-30%</div>
+            <div class="ten11">Ten11/New in</div>
+            <img
+              src="https://zandokh.com/image/cache/catalog/products/2025-08/22225071668/ZD__9224-cr-450x672.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title">
+            <span class="titles">
+              <span class="title-left">
+                <p class="heng">US $13.96</p>
+                <p id="heng">US $19.95.</p>
+              </span>
+              <span class="title-right"
+                ><i class="fa-regular fa-heart"></i></span>
+            </span>
+            <p>Regular Fitted Trouser</p>
+            <ul class="color">
+                  <li></li>
+                  <li></li>
+                </ul>
+          </div>
+        </div>
+        <div class="image-card">
+          <div class="imaage">
+            <div class="discount">-30%</div>
+            <div class="ten11">Ten11/New in</div>
+            <img
+              src="https://zandokh.com/image/cache/catalog/products/2025-09/21225081374%20Replace/ZD__0444-cr-450x672.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title">
+            <span class="titles">
+              <span class="title-left">
+                <p class="heng">US $13.96</p>
+                <p id="heng">US $19.95.</p>
+              </span>
+              <span class="title-right"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </span>
+            <p>Regular Fitted Trouser</p>
+          </div>
+        </div>
+        <div class="image-card">
+          
+          <div class="imaage">
+            <div class="discount">-30%</div>
+            <div class="ten11">Ten11/New in</div>
+            <img
+              src="https://zandokh.com/image/cache/catalog/products/2025-09/22225061594/ZD__0538-cr-450x672.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title">
+            <span class="titles">
+              <span class="title-left">
+                <p class="heng">US $13.96</p>
+                <p id="heng">US $19.95</p>
+              </span>
+              <span class="title-right"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </span>
+            <p>Regular Fitted Trouser</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
