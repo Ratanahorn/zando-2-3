@@ -221,51 +221,50 @@ ul {
   text-decoration: none;
   color: black;
 }
-.card{
+.card {
   width: 100%;
   height: 90%;
   margin: auto;
   display: flex;
   gap: 2%;
 }
-.card div img{
+.card div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.image-card{
+.image-card {
   width: 24.5%;
   height: 100%;
 }
-.imaage{
+.imaage {
   width: 100%;
   height: 75%;
 }
-.title{
+.title {
   padding: 5px;
 }
-.titles{
+.titles {
   display: flex;
   justify-content: space-between;
 }
-.title-left{
+.title-left {
   display: flex;
   gap: 10px;
 }
-.heng{
+.heng {
   color: red;
 }
-#heng{
-  
+#heng {
   text-decoration: line-through;
 }
-.imaage{
+.imaage {
   position: relative;
 }
-.image-card{
+.image-card {
   position: relative;
 }
-.discount{
+.discount {
   width: 60px;
   background-color: red;
   color: white;
@@ -277,92 +276,146 @@ ul {
   left: 15px;
   border-radius: 5px;
 }
-.ten11{
+.ten11 {
   position: absolute;
   bottom: 3%;
   right: 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
-.color{
+.color {
   display: flex;
   gap: 15px;
-
 }
-.color li{
+.color li {
   width: 15px;
   height: 15px;
   border: 1px solid black;
   border-radius: 5px;
 }
-.color li:first-child{
+.color li:first-child {
   background-color: black;
 }
-.color li:last-child{
+.color li:last-child {
   background-color: white;
 }
-.energy{
+.energy {
   margin: auto;
   width: 90%;
   height: 500px;
 }
-.top{
+.top {
   margin-top: 20px;
 }
-.top-2{
+.top-2 {
   width: 100%;
   height: 100%;
 }
-.top-image{
+.top-image {
   margin-top: 15px;
   width: 100%;
   height: 100%;
   display: flex;
   gap: 2%;
 }
-.top-image > .image-top{
+.top-image > .image-top {
   width: 24.5%;
   height: 100%;
   gap: 2%;
 }
-.image-top{
+.image-top {
   width: 100%;
   height: 100%;
 }
-.ima{
+.ima {
   width: 100%;
   height: 75%;
 }
-.the-title{
+.the-title {
   width: 100%;
   height: 25%;
   padding: 10px;
- 
 }
-.ima-top{
+.ima-top {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.class-top{
+.class-top {
   gap: 5px;
   display: flex;
   justify-content: space-between;
 }
-.span-left{
+.span-left {
   color: red;
   font-weight: bold;
 }
-.span-middle{
+.span-middle {
   text-decoration: line-through;
 }
-.ima{
+.ima {
   position: relative;
 }
-.ten112{
+.ten112 {
   position: absolute;
   bottom: 15px;
   right: 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+footer {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  margin-top: 20px;
+}
+.footer > div {
+  width: 20%;
+  height: 100%;
+  
+}
+.line-1 img {
+  margin-left: -5px;
+  width: 100px;
+  height: 100px;
+}
+.line-2 {
+  width: 100%;
+  height: 100%;
+  margin-left: -50px;
+}
+.line-2 img {
+  width: 18px;
+  height: 18px;
+}
+.line-icon a{
+font-size: 15px;
+text-decoration: none;
+color: black;
+}
+.line-4{
+  margin-left: -50px;
+}
+.footer-btt{
+  margin-top: 50px;
+  width: 30%;
+  height: 100px;
+}
+.footer-bottom{
+  width: 100%;
+  height: 100%;
+}
+.footer-bottom img{
+  width: 80%;
+  height: 70%;
+  object-fit: contain;
+}
+.acc{
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.last{
+  margin-top: 50px;
+  height: 200px;
 }
